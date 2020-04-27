@@ -1,0 +1,125 @@
+body {
+  background: linear-gradient(315deg, #dadbd9 0%, #ffffff 100%);
+  font-size: 16px;
+  padding: 0px;
+}
+
+.App {
+  height: auto;
+  overflow: auto;
+}
+@media screen and (min-width: 992px) {
+  .App {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+main,
+header {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media screen and (min-width: 992px) {
+  main {
+    flex-flow: row nowrap;
+  }
+}
+
+header {
+  height: 90px;
+}
+header h1 {
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.editor-container > h2,
+.preview-container > h2 {
+  background-color: #666666;
+  color: #fbfbfb;
+  font-size: 1.2em;
+  margin: 0px;
+  padding: 15px 30px;
+}
+
+.editor-container {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .editor-container {
+    width: 50%;
+  }
+}
+
+#editor {
+  background-color: #fafafa;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 30px;
+  width: 100%; 
+}
+@media screen and (min-width: 992px) {
+  #editor {
+    height: calc(100vh - 148px);
+  }
+}
+
+.preview-container {
+  flex: 1 1 auto;
+}
+
+#preview {
+  height: auto;
+  overflow-y: auto;
+  padding: 0 30px; 
+}
+@media screen and (min-width: 992px) {
+  #preview {
+    height: calc(100vh - 148px);
+  }
+}
+
+code {
+  background-color: #ffffff;
+  padding: 2px;
+}
+
+pre {
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+blockquote {
+  background-color: #fefefe;
+  border: 1px solid #999999;
+  font-style: oblique;
+  margin: 15px 0;
+  padding: 30px;
+}
+
+blockquote p {
+  margin: 0px;
+}
+
+ul, ol {
+  border-left: 1px solid #999999;
+  padding-inline-start: 30px;
+}
+
+thead {
+  background-color: #666666;
+  color: #fefefe;
+}
+
+tbody {
+  background-color: #ffffff;
+}
